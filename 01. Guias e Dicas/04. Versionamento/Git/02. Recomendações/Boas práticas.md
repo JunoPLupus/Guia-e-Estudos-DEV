@@ -1,3 +1,10 @@
+---
+tags:
+  - versionamento
+  - git
+  - recomendações
+  - commits
+---
 # Boas Práticas
 
 - Manter a primeira linha curta (50 caracteres ou menos);

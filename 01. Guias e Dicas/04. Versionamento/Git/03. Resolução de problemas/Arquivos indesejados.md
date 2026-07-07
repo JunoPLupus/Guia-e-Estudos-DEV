@@ -1,3 +1,10 @@
+---
+tags:
+  - versionamento
+  - git
+  - resolução-problemas
+  - arquivos
+---
 # Arquivos indesejados
 
 ## Arquivos indesejados no repositório

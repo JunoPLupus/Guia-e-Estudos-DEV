@@ -1,3 +1,10 @@
+---
+tags:
+  - versionamento
+  - git
+  - recomendações
+  - commits
+---
 # Convenções de mensagens de _commits_
 
 
