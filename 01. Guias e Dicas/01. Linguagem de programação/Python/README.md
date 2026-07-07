@@ -6,13 +6,13 @@ tags:
 ---
 # Python
 
-1. [[01. Guias e Dicas/01. Linguagem de programação/Python/01. Básico/00. Básico|Guia Básico de Python]]
-2. [[00. Dicas|Dicas]]
+1. [[01. Guias e Dicas/01. Linguagem de programação/Python/01. Básico/README|Guia Básico de Python]]
+2. [[01. Guias e Dicas/01. Linguagem de programação/Python/02. Dicas/README|Dicas]]
 
 ---
 ## Frameworks
 
-1. [[00. Django|Django]]
+1. [[01. Guias e Dicas/02. Frameworks/03. Fullstack/Django/README|Django]]
 
 ---
 
