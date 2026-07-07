@@ -4,7 +4,6 @@ tags:
   - git
   - índice
 ---
-
 # Git
 
-1. [[01. Guias e Dicas/04. Versionamento/Git/01. Básico/README|Guia Básico de Git]]
+1. [Guia Básico de Git](01.%20Guias%20e%20Dicas/04.%20Versionamento/Git/01.%20Básico/README.md)
