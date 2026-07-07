@@ -20,7 +20,7 @@ tags:
 
 ### Formatação de código
 
-1. [[00. Ruff|Ruff]]
+1. [[01. Guias e Dicas/03. Bibliotecas/Análise Estática e Formatação de código/Ruff/README|Ruff]]
 2. Typos
 
 ### Gerenciador de Tarefas

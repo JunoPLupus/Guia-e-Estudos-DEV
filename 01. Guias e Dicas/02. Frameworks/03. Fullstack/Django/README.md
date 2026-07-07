@@ -9,8 +9,8 @@ links: https://docs.djangoproject.com/pt-br/5.2/
 ---
 # Django
 
-É um _framework full-stack_ baseado exclusivamente em [[01. Guias e Dicas/01. Linguagem de programação/Python/README|Python]], mas por ser voltado ao desenvolvimento web, interage com linguagens padrão de frontend web como _HTML_, _CSS_ e _Javascript_.
+É um _framework full-stack_ baseado exclusivamente em [Python](01.%20Guias%20e%20Dicas/01.Linguagem%20de%20programação/Python/README.md), mas por ser voltado ao desenvolvimento web, interage com linguagens padrão de frontend web como _HTML_, _CSS_ e _Javascript_.
 
-1. [[01. Guias e Dicas/02. Frameworks/03. Fullstack/Django/01. Básico/README|Guia Básico de Django]]
+1. [Guia Básico de Django](01.%20Básico/README.md)
 
 

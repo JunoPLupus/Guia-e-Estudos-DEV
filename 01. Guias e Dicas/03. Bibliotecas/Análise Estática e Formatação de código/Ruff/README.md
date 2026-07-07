@@ -12,5 +12,5 @@ links:
 ---
 # Ruff
 
-É uma #biblioteca focada em #linting (análise estática) e formatação de código escrita em _Python_.  Ela é usada para encontrar erros, problemas de estilos, falhas de segurança e padronizar o código antes mesmo de ele ser executado.
+É uma #biblioteca focada em #linting (análise estática) e formatação de código escrita em #python.  Ela é usada para encontrar erros, problemas de estilos, falhas de segurança e padronizar o código antes mesmo de ele ser executado.
 

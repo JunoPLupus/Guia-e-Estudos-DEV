@@ -14,10 +14,10 @@ Esta versão do Django é compatível com _Python 3.12+_ e _PostgreSQL 18_.
 
 ## Primeiros passos
 
-- **Do início:** [Visão geral](https://docs.djangoproject.com/pt-br/5.2/intro/overview/) | [[00.1. Instalação|Instalação]]
+- **Do início:** [Visão geral](https://docs.djangoproject.com/pt-br/5.2/intro/overview/) | [Instalação](00.1.%20Instalação)
 - **Tutorial:** 
-	0. [[00.2. Criação e Configuração|Criação e Configuração]]
-	1. [[01. Requisições e Respostas|Requisições e respostas]]
+	0. [Criação e Configuração](00.2.%20Criação%20e%20Configuração)
+	1. [Requisições e respostas](01.%20Requisições%20e%20Respostas)
 	2. Modelos e o site Admin
 	3. Views e templates
 	4. Forms e views genéricas
