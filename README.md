@@ -1,6 +1,15 @@
-# Sobre o Repositório
+# Guia e Estudos DEV
 
-Este repositório está em desenvolvimento, o propósito dele é reunir informações úteis e centralizar links que possam ajudar a se orientar durante o desenvolvimento, ao mesmo tempo que desenvolve as próprias habilidades.
+Repositório de guias de estudo dev. Foco atual em Python; TypeScript/Angular/Node em breve.
+
+---
+
+## Conteúdo
+
+- [Python](linguagens/python/README.md)
+- [JavaScript / TypeScript](linguagens/javascript-typescript/README.md)
+- [Git](ferramentas/git/README.md)
+- [Engenharia de Software](engenharia-software/README.md)
 
 ---
 
