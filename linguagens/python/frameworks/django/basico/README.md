@@ -9,7 +9,6 @@ atualizado: 2026-07-08
 links:
   - https://docs.djangoproject.com/pt-br/5.2/intro/
 ---
-
 # Guia Básico de Django
 
 > Django 5.2 — compatível com Python 3.12+ e PostgreSQL 18.

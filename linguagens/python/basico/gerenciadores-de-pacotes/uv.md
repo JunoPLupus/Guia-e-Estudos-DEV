@@ -14,7 +14,6 @@ atualizado: 2026-07-08
 links:
   - https://docs.astral.sh/uv/getting-started/installation/
 ---
-
 # uv
 
 ## O que é

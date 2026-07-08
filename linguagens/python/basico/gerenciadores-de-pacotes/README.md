@@ -7,9 +7,15 @@ tags:
 status: pronto
 atualizado: 2026-07-08
 ---
-
 # Gerenciadores de Pacotes Python
 
+1. [pip](pip.md)
+2. [pipx](pipx.md)
+3. [uv](uv.md)
+4. [poetry](poetry.md)
+5. [conda](conda.md)
+
+---
 ## Qual usar quando?
 
 | Ferramenta | Para quê | Quando usar |
@@ -20,10 +26,3 @@ atualizado: 2026-07-08
 | [poetry](poetry.md) | Gerenciar projetos + empacotar e publicar | Quando precisar publicar no PyPI |
 | [conda](conda.md) | Gerenciar Python + dependências de sistema | Data Science, ML, bibliotecas C/C++ |
 
----
-
-1. [pip](pip.md)
-2. [pipx](pipx.md)
-3. [uv](uv.md)
-4. [poetry](poetry.md)
-5. [conda](conda.md)

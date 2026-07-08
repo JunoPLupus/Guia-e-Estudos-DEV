@@ -6,7 +6,6 @@ tags:
 status: pronto
 atualizado: 2026-07-08
 ---
-
 # Guia Básico de Git
 
 1. [Repositórios](01-repositorios.md)

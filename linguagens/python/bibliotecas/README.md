@@ -6,7 +6,6 @@ tags:
 status: pronto
 atualizado: 2026-07-08
 ---
-
 # Bibliotecas Python
 
 ## Análise estática e formatação
@@ -19,4 +18,4 @@ atualizado: 2026-07-08
 
 ## Modelagem e validação de dados
 
-- [Pydantic](pydantic/README.md)
+- [Pydantic](linguagens/python/bibliotecas/modelagem-e-validacao/pydantic/README.md)

@@ -2,13 +2,13 @@
 title: Ambiente Virtual (VENV)
 tipo: guia
 linguagem: python
-versao_linguagem: "3.3+"
+versao_linguagem: 3.13+
 tags:
   - guia
   - ambiente-virtual
 nivel: basico
 status: pronto
-atualizado: 2026-07-08
+atualizado: 2026-07-08T14:13:00
 links:
   - https://docs.python.org/3/tutorial/venv.html
 ---
@@ -19,7 +19,7 @@ links:
 Dentro do diretório desejado, execute:
 
 ``` bash
-python -m venv nome-do-env # cria ambiente virtual
+$ python -m venv nome-do-env # cria ambiente virtual
 ```
 
 O local mais comum de criar esse ambiente virtual é o `.venv` para evita colidir com variáveis de ambiente do `.env`, que costuma ser adicionado no `.gitignore` para não ser enviado para o repositório remoto.
@@ -27,9 +27,9 @@ O local mais comum de criar esse ambiente virtual é o `.venv` para evita colidi
 Com o ambiente criado, agora ative ele com o seguinte comando:
 
 ``` bash
-nome-do-env\Scripts\activate # Windows
+$ .nome-do-env/Scripts/activate # Windows
 
-source nome-do-env/bin/activate # Unix ou MacOS
+$ source nome-do-env/bin/activate # Unix ou MacOS
 ```
 
 Isso vai mudar seu terminal que agora estará apontando para este novo ambiente e todas as bibliotecas instaladas serão instaladas dentro deste ambiente, podendo usar até mesmo uma versão diferente de _Python_ em cada ambiente.
@@ -51,5 +51,5 @@ Isso não altera a variável `PYTHONPATH`, o que pode levar a possíveis problem
 Para desativar o ambiente virtual, digite no terminal:
 
 ``` bash
-deactivate
+$ deactivate
 ```

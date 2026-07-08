@@ -6,7 +6,6 @@ tags:
 status: pronto
 atualizado: 2026-07-08
 ---
-
 # Recomendações de Git
 
 1. [Boas Práticas](boas-praticas.md)

@@ -1,4 +1,6 @@
 ---
+aliases:
+  - Python
 title: Python
 tipo: indice
 tags:
@@ -6,7 +8,6 @@ tags:
 status: pronto
 atualizado: 2026-07-08
 ---
-
 # Python
 
 ## Básico
@@ -29,4 +30,4 @@ atualizado: 2026-07-08
 
 ### Modelagem e validação
 
-1. [Pydantic](bibliotecas/pydantic/README.md)
+1. [Pydantic](linguagens/python/bibliotecas/modelagem-e-validacao/pydantic/README.md)

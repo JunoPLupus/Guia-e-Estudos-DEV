@@ -12,7 +12,6 @@ links:
   - https://docs.python.org/3.13/installing/index.html
   - https://pypi.org/
 ---
-
 # pip
 
 ## O que é

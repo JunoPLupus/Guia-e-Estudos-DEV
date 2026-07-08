@@ -11,7 +11,6 @@ atualizado: 2026-07-08
 links:
   - https://python-poetry.org/docs/
 ---
-
 # poetry
 
 ## O que é

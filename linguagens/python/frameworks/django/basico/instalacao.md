@@ -10,7 +10,6 @@ nivel: basico
 status: pronto
 atualizado: 2026-07-08
 ---
-
 # Instalação
 
 1. Instale o [pip](../../../basico/gerenciadores-de-pacotes/pip.md);

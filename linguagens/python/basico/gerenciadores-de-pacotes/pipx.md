@@ -11,7 +11,6 @@ atualizado: 2026-07-08
 links:
   - https://pipx.pypa.io/stable/how-to/install-pipx/
 ---
-
 # pipx
 
 ## O que é

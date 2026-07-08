@@ -13,7 +13,6 @@ atualizado:              # AAAA-MM-DD
 links:
   - 
 ---
-
 # {{title}}
 
 ## O que é

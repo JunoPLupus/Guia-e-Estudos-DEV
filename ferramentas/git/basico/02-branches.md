@@ -7,7 +7,6 @@ nivel: basico
 status: pronto
 atualizado: 2026-07-08
 ---
-
 # Branches
 
 

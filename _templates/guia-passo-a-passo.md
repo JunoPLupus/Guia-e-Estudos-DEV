@@ -9,7 +9,6 @@ nivel: basico           # basico | intermediario | avancado
 status: rascunho
 atualizado: 
 ---
-
 # {{title}}
 
 ## Objetivo

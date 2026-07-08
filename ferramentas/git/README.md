@@ -6,7 +6,6 @@ tags:
 status: pronto
 atualizado: 2026-07-08
 ---
-
 # Git
 
 1. [Guia Básico de Git](basico/README.md)

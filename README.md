@@ -1,6 +1,6 @@
 # Guia e Estudos DEV
 
-Repositório de guias de estudo dev. Foco atual em Python; TypeScript/Angular/Node em breve.
+Repositório de guias de estudo dev. Foco atual em _Python_; _TypeScript/Angular/Node_ em breve.
 
 ---
 

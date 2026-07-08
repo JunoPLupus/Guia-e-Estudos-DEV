@@ -12,7 +12,6 @@ atualizado: 2026-07-08
 links:
   - https://docs.djangoproject.com/pt-br/5.2/intro/tutorial01/
 ---
-
 # Requisições e Respostas
 
 ## Criando a aplicação de enquetes: Polls
@@ -25,7 +24,7 @@ Ao criar uma aplicação no projeto, o _Django_ gera automaticamente a estrutura
 As aplicações podem viver em qualquer lugar do _Python Path_. Neste tutorial, vamos criar nossa aplicação `polls` dentro da pasta `django_tutorial`.
 
 ``` bash
-python manage.py startapp polls
+$ python manage.py startapp polls
 ```
 
 ---
@@ -78,5 +77,5 @@ O `path()` espera pelo menos 2 argumentos: **rota** e **view**. A ideia por trá
 Agora com as rotas devidamente configuradas, só rodar o servidor novamente e acessar http://localhost:8000/polls/.
 
 ``` bash
-python manage.py runserver
+$ python manage.py runserver
 ```

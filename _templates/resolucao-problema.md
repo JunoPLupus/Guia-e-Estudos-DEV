@@ -7,7 +7,6 @@ tags:
 status: rascunho
 atualizado: 
 ---
-
 # {{title}}
 
 ## Sintoma

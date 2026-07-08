@@ -7,7 +7,6 @@ tags:
 status: pronto
 atualizado: 2026-07-08
 ---
-
 # Arquivos indesejados
 
 ## Arquivos indesejados no repositório

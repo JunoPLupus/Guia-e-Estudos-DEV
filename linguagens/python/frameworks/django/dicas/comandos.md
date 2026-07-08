@@ -1,6 +1,6 @@
 ---
 title: Comandos
-tipo: ferramenta
+tipo: guia
 linguagem: python
 tags:
   - django-5-2
@@ -9,12 +9,11 @@ atualizado: 2026-07-08
 links:
   - https://docs.djangoproject.com/pt-br/5.2/ref/django-admin/
 ---
-
 # Comandos
 
 ## django-admin e manage.py
 
-`django-admin` é um comando Django usado para tarefas administrativas.
+`django-admin` é um comando [Django](linguagens/python/frameworks/django/README.md) usado para tarefas administrativas.
 
 `manage.py` é criado automaticamente em cada projeto Django. Este comando faz o mesmo que `django-admin`, mas também define a variável de ambiente `DJANGO_SETTINGS_MODULE` que aponta para o arquivo `settings.py` do seu projeto.
 

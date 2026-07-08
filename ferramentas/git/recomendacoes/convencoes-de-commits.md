@@ -9,7 +9,6 @@ atualizado: 2026-07-08
 links:
   - https://www.conventionalcommits.org/en/v1.0.0/
 ---
-
 # Convenções de mensagens de _commits_
 
 

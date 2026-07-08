@@ -10,7 +10,6 @@ tags:
 status: rascunho        # rascunho | revisar | pronto
 atualizado:            # AAAA-MM-DD
 ---
-
 # {{title}}
 
 ## O que é

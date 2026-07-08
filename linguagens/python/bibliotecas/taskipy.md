@@ -10,7 +10,6 @@ atualizado: 2026-07-08
 links:
   - https://pypi.org/project/taskipy/1.0.0/
 ---
-
 # Taskipy
 
 É uma biblioteca de código aberto que funciona como um _task runner_ (executador de tarefas). Ela permite que você crie atalhos e comandos personalizados para automatizar rotinas do seu projeto, como rodar testes, formatar código ou limpar o ambiente, diretamente pelo terminal.

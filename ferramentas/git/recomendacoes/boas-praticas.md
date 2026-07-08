@@ -7,7 +7,6 @@ tags:
 status: pronto
 atualizado: 2026-07-08
 ---
-
 # Boas Práticas
 
 - Manter a primeira linha curta (50 caracteres ou menos);
