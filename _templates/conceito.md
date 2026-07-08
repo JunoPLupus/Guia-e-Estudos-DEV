@@ -1,13 +1,15 @@
 ---
-title: 
+title: <% tp.file.title %>
+aliases:
+  - "<% tp.file.title %>"
 tipo: conceito
 categoria:              # ex: principio | padrao-projeto | arquitetura
 tags:
   - conceito
 status: rascunho
-atualizado: 
+atualizado: <% tp.date.now("YYYY-MM-DD") %>
 ---
-# {{title}}
+# <% tp.file.title %>
 
 ## Em uma frase
 <!-- Definição curta e clara, sem jargão. -->

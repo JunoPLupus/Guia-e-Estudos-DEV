@@ -1,5 +1,7 @@
 ---
-title: 
+title: <% tp.file.title %>
+aliases:
+  - "<% tp.file.title %>"
 tipo: guia
 linguagem: python       # python | typescript | transversal
 versao_linguagem:       # ex: "3.12+"
@@ -7,9 +9,9 @@ tags:
   - guia
 nivel: basico           # basico | intermediario | avancado
 status: rascunho
-atualizado: 
+atualizado: <% tp.date.now("YYYY-MM-DD") %>
 ---
-# {{title}}
+# <% tp.file.title %>
 
 ## Objetivo
 <!-- O que o leitor vai ter feito ao final. Uma frase. -->

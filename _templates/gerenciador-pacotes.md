@@ -1,5 +1,7 @@
 ---
-title:
+title: <% tp.file.title %>
+aliases:
+  - "<% tp.file.title %>"
 tipo: ferramenta
 categoria: gerenciador-pacotes
 linguagem: python
@@ -9,11 +11,11 @@ substitui:               # ex: [pip, pipx] — o que ele pode substituir, se apl
 tags:
   - gerenciador-pacotes
 status: rascunho
-atualizado:              # AAAA-MM-DD
+atualizado: <% tp.date.now("YYYY-MM-DD") %>
 links:
   - 
 ---
-# {{title}}
+# <% tp.file.title %>
 
 ## O que é
 <!-- 1-2 frases: o que faz e o que o diferencia dos outros. -->

@@ -1,5 +1,7 @@
 ---
-title: 
+title: <% tp.file.title %>
+aliases:
+  - "<% tp.file.title %>"
 tipo: ferramenta        # ferramenta | biblioteca
 categoria:              # ex: analise-estatica | validacao | migracao-bd | gerenciador-pacotes
 linguagem: python       # python | typescript | javascript | transversal
@@ -8,9 +10,9 @@ versao_linguagem:       # ex: "3.12+" (versão de linguagem que exige, se aplic�
 tags:
   - ferramenta
 status: rascunho        # rascunho | revisar | pronto
-atualizado:            # AAAA-MM-DD
+atualizado: <% tp.date.now("YYYY-MM-DD") %>
 ---
-# {{title}}
+# <% tp.file.title %>
 
 ## O que é
 <!-- 1-2 frases diretas. Pra que serve, em linguagem simples. -->
