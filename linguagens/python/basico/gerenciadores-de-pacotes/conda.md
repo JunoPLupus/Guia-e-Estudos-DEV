@@ -1,5 +1,5 @@
 ---
-title: conda
+title: Conda
 tipo: ferramenta
 categoria: gerenciador-pacotes
 linguagem: python
@@ -10,7 +10,7 @@ atualizado: 2026-07-08
 links:
   - https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
 ---
-# conda
+# Conda
 
 ## O que é
 

@@ -22,11 +22,11 @@ atualizado: 2026-07-08
 
 ### Análise estática e formatação
 
-1. [Ruff](bibliotecas/ruff.md)
+1. [Ruff](ruff.md)
 
 ### Gerenciador de tarefas
 
-1. [Taskipy](bibliotecas/taskipy.md)
+1. [Taskipy](taskipy.md)
 
 ### Modelagem e validação
 

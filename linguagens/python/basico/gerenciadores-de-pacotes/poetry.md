@@ -1,9 +1,9 @@
 ---
-title: poetry
+title: Poetry
 tipo: ferramenta
 categoria: gerenciador-pacotes
 linguagem: python
-versao_linguagem: "3.10+"
+versao_linguagem: 3.10+
 tags:
   - gerenciador-pacotes
 status: pronto
@@ -11,7 +11,7 @@ atualizado: 2026-07-08
 links:
   - https://python-poetry.org/docs/
 ---
-# poetry
+# Poetry
 
 ## O que é
 

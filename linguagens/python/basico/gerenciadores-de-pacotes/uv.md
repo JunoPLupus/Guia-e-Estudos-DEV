@@ -1,9 +1,9 @@
 ---
-title: uv
+title: UV
 tipo: ferramenta
 categoria: gerenciador-pacotes
 linguagem: python
-versao_linguagem: "3.10+"
+versao_linguagem: 3.10+
 substitui:
   - pip
   - pipx
@@ -14,7 +14,7 @@ atualizado: 2026-07-08
 links:
   - https://docs.astral.sh/uv/getting-started/installation/
 ---
-# uv
+# UV
 
 ## O que é
 

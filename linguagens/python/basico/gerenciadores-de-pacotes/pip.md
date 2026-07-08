@@ -1,9 +1,9 @@
 ---
-title: pip
+title: Pip
 tipo: ferramenta
 categoria: gerenciador-pacotes
 linguagem: python
-versao_linguagem: "3.0+"
+versao_linguagem: 3.0+
 tags:
   - gerenciador-pacotes
 status: pronto
@@ -12,7 +12,7 @@ links:
   - https://docs.python.org/3.13/installing/index.html
   - https://pypi.org/
 ---
-# pip
+# Pip
 
 ## O que é
 
