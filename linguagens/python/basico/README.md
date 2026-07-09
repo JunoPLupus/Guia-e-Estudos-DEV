@@ -6,6 +6,7 @@ tags:
 status: pronto
 atualizado: 2026-07-08
 ---
+[< Python (Índice)](linguagens/python/README.md)
 # Guia Básico de Python
 
 1. [Ambiente Virtual (venv)](ambiente-virtual.md)

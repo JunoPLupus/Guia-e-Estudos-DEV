@@ -12,6 +12,7 @@ atualizado: 2026-07-08T14:13:00
 links:
   - https://docs.python.org/3/tutorial/venv.html
 ---
+[< Guia Básico de Python (Índice)](linguagens/python/basico/README.md)
 # Ambiente Virtual (VENV)
 
 **É recomendado criar um ambiente virtual por projeto** para isolar ambientes, evitando conflitos entre bibliotecas de diferentes versões que você usa nos projetos pois ele isola as bibliotecas que você instala dentro do ambiente ativo.

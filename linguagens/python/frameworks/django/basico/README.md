@@ -9,17 +9,18 @@ atualizado: 2026-07-08
 links:
   - https://docs.djangoproject.com/pt-br/5.2/intro/
 ---
+[< Django (Índice)](linguagens/python/frameworks/django/README.md)
 # Guia Básico de Django
 
 > Django 5.2 — compatível com Python 3.12+ e PostgreSQL 18.
 
 ## Primeiros passos
 
-- **Do início:** [Visão geral](https://docs.djangoproject.com/pt-br/5.2/intro/overview/) | [Instalação](instalacao.md)
+- **Do início:** [Visão geral](https://docs.djangoproject.com/pt-br/5.2/intro/overview/) | [Instalação](0-instalacao.md)
 - **Tutorial:**
-	0. [Criação e Configuração](criacao-e-configuracao.md)
-	1. [Requisições e respostas](requisicoes-e-respostas.md)
-	2. Modelos e o site Admin
+	0. [Criação e Configuração](0-criacao-e-configuracao.md)
+	1. [Requisições e respostas](1-requisicoes-e-respostas.md)
+	2. [Modelos e o site Admin](2-modelos-e-site-admin.md)
 	3. Views e templates
 	4. Forms e views genéricas
 	5. Testes

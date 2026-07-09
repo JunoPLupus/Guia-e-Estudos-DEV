@@ -6,6 +6,7 @@ tags:
 status: pronto
 atualizado: 2026-07-08
 ---
+[< Python (Índice)](linguagens/python/README.md)
 # Bibliotecas Python
 
 ## Análise estática e formatação

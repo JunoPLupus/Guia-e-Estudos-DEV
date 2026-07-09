@@ -11,6 +11,7 @@ atualizado: 2026-07-08
 links:
   - https://pipx.pypa.io/stable/how-to/install-pipx/
 ---
+[< Gerenciadores de Pacotes Python](linguagens/python/basico/gerenciadores-de-pacotes/README.md)
 # Pipx
 
 ## O que é

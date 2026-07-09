@@ -14,6 +14,7 @@ atualizado: 2026-07-08
 links:
   - https://docs.astral.sh/uv/getting-started/installation/
 ---
+[< Gerenciadores de Pacotes Python](linguagens/python/basico/gerenciadores-de-pacotes/README.md)
 # UV
 
 ## O que é

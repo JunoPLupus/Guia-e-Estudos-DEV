@@ -11,6 +11,7 @@ atualizado: 2026-07-08
 links:
   - https://python-poetry.org/docs/
 ---
+[< Gerenciadores de Pacotes Python](linguagens/python/basico/gerenciadores-de-pacotes/README.md)
 # Poetry
 
 ## O que é

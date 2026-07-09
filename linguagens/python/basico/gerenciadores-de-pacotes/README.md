@@ -7,6 +7,7 @@ tags:
 status: pronto
 atualizado: 2026-07-08
 ---
+[< Guia Básico de Python (Índice)](linguagens/python/basico/README.md)
 # Gerenciadores de Pacotes Python
 
 1. [pip](pip.md)

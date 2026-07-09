@@ -9,6 +9,7 @@ atualizado: 2026-07-08
 links:
   - https://docs.djangoproject.com/pt-br/5.2/ref/django-admin/
 ---
+[< Django (Índice)](linguagens/python/frameworks/django/README.md)
 # Comandos
 
 ## django-admin e manage.py
