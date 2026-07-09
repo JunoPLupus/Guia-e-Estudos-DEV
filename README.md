@@ -6,6 +6,8 @@ Repositório de guias de estudo dev. Foco atual em _Python_; _TypeScript/Angular
 
 ## Conteúdo
 
+![Print do Mapa.canvas](2026-07-09_mapa-canvas.png)
+
 - [Python](linguagens/python/README.md)
 - [JavaScript / TypeScript](linguagens/javascript-typescript/README.md)
 - [Git](ferramentas/git/README.md)
