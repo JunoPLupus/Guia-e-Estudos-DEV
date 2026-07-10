@@ -20,13 +20,14 @@ links:
 - **Tutorial:**
 	0. [Criação e Configuração](0-criacao-e-configuracao.md)
 	1. [Requisições e respostas](1-requisicoes-e-respostas.md)
-	3. Views e templates
-	4. Forms e views genéricas
-	5. Testes
-	6. Arquivos estáticos
-	7. Personalizando o site admin
-	8. Adicionando pacotes de terceiros
 	2. [Banco de dados e Modelos](2-db-e-modelos.md)
+	3. [Site Admin](3-site-admin.md)
+	4. [Views e Templates](4-views-e-templates.md)
+	5. Forms e views genéricas
+	6. Testes
+	7. Arquivos estáticos
+	8. Personalizando o site admin
+	9. Adicionando pacotes de terceiros
 - **Tutoriais avançados:**
 	- [Como escrever aplicações reutilizáveis](https://docs.djangoproject.com/pt-br/5.2/intro/reusable-apps/)
 	- [Escrevendo sua primeira contribuição para o Django](https://docs.djangoproject.com/pt-br/5.2/intro/contributing/)
