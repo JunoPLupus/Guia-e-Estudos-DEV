@@ -10,7 +10,12 @@ nivel: basico
 status: pronto
 atualizado: 2026-07-08
 ---
+%% col-start %%
+%% col-break:b:secondary %%
 [< Guia Básico de Django (Índice)](linguagens/python/frameworks/django/basico/README.md)
+%% col-break:b:secondary %%
+[Parte 1 - Requisições e Respostas >](1-requisicoes-e-respostas.md)
+%% col-end %%
 # Criação e Configuração
 
 
@@ -72,4 +77,9 @@ Se o servidor estiver funcionando, acesse http://127.0.0.1:8000/ e verá inicial
 >  O runserver recarrega automaticamente a cada solicitação, conforme necessário. Não é necessário reiniciar o servidor para que as alterações de código tenham efeito. Porém, algumas ações como adição de arquivos não disparam uma reinicialização, nesses casos será necessário reiniciar manualmente.
 
 
-[> Parte 1 - Requisições e Respostas](1-requisicoes-e-respostas.md)
+%% col-start %%
+%% col-break:b:secondary %%
+[< Guia Básico de Django (Índice)](linguagens/python/frameworks/django/basico/README.md)
+%% col-break:b:secondary %%
+[Parte 1 - Requisições e Respostas >](1-requisicoes-e-respostas.md)
+%% col-end %%

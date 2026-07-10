@@ -12,8 +12,14 @@ atualizado: 2026-07-08
 links:
   - https://docs.djangoproject.com/pt-br/5.2/intro/tutorial01/
 ---
+%% col-start %%
+%% col-break:b:secondary %%
 [< Parte 0 - Criação e Configuração](0-criacao-e-configuracao.md)
+%% col-break:b:secondary %%
+[Parte 2 - Modelos e o site Admin >](2-db-e-modelos.md)
+%% col-end %%
 # Requisições e Respostas
+
 
 ## Criando a aplicação de enquetes: Polls
 
@@ -81,4 +87,10 @@ Agora com as rotas devidamente configuradas, só rodar o servidor novamente e ac
 $ python manage.py runserver
 ```
 
-[> Parte 2 - Modelos e o site Admin](2-modelos-e-site-admin.md)
+
+%% col-start %%
+%% col-break:b:secondary %%
+[< Parte 0 - Criação e Configuração](0-criacao-e-configuracao.md)
+%% col-break:b:secondary %%
+[Parte 2 - Modelos e o site Admin >](2-db-e-modelos.md)
+%% col-end %%
