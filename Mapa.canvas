@@ -1,57 +1,11 @@
 {
 	"nodes":[
-		{"id":"d92498542e0864a8","type":"group","x":-1500,"y":-280,"width":300,"height":260,"label":"Tutorial"},
+		{"id":"d92498542e0864a8","type":"group","x":-1540,"y":-300,"width":320,"height":430,"label":"Tutorial"},
 		{"id":"991b54c551b7018e","type":"group","x":-1060,"y":100,"width":340,"height":180,"label":"Dicas"},
 		{"id":"97a53a51ac26bb86","type":"group","x":-400,"y":640,"width":560,"height":100,"label":"Gerenciadores de Pacotes"},
 		{"id":"8d0ef019492f953b","type":"group","x":840,"y":200,"width":300,"height":140,"label":"Modelagem e Validação"},
 		{"id":"add3c2261b657303","type":"group","x":840,"y":-20,"width":320,"height":120,"label":"Gerenciador de Tarefas"},
 		{"id":"01d15696b5877fd0","type":"group","x":840,"y":-240,"width":280,"height":100,"label":"Análise Estática"},
-		{
-			"id":"7e62085f821e1549",
-			"type":"text",
-			"text":"[Python](linguagens/python/README.md)",
-			"styleAttributes":{
-				"textAlign":null,
-				"shape":"predefined-process"
-			},
-			"x":220,
-			"y":-20,
-			"width":100,
-			"height":60,
-			"color":"4"
-		},
-		{
-			"id":"e63fe6f51bd94c47",
-			"type":"text",
-			"text":"[Guia Básico de Python](linguagens/python/basico/README.md)",
-			"styleAttributes":{
-				"textAlign":null
-			},
-			"x":160,
-			"y":160,
-			"width":220,
-			"height":60
-		},
-		{
-			"id":"1a249a56a23be580",
-			"type":"text",
-			"text":"[Ambiente Virtual (VENV)](ambiente-virtual.md)",
-			"styleAttributes":{},
-			"x":380,
-			"y":440,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"bd30aa6436c68883",
-			"type":"text",
-			"text":"[Bibliotecas](linguagens/python/bibliotecas/README.md)",
-			"styleAttributes":{},
-			"x":520,
-			"y":-20,
-			"width":120,
-			"height":60
-		},
 		{
 			"id":"c7c4027162659af4",
 			"type":"text",
@@ -93,6 +47,32 @@
 			"height":60
 		},
 		{
+			"id":"7e62085f821e1549",
+			"type":"text",
+			"text":"[Python](linguagens/python/README.md)",
+			"styleAttributes":{
+				"textAlign":null,
+				"shape":"predefined-process"
+			},
+			"x":220,
+			"y":-20,
+			"width":100,
+			"height":60,
+			"color":"4"
+		},
+		{
+			"id":"e63fe6f51bd94c47",
+			"type":"text",
+			"text":"[Guia Básico de Python](linguagens/python/basico/README.md)",
+			"styleAttributes":{
+				"textAlign":null
+			},
+			"x":160,
+			"y":160,
+			"width":220,
+			"height":60
+		},
+		{
 			"id":"ea54a559e61c33f2",
 			"type":"text",
 			"text":"[Django](linguagens/python/frameworks/django/README.md)",
@@ -103,16 +83,6 @@
 			"height":60
 		},
 		{
-			"id":"2236ff8636d4ad3f",
-			"type":"text",
-			"text":"[Guia Básico de Django](linguagens/python/frameworks/django/basico/README.md)",
-			"styleAttributes":{},
-			"x":-930,
-			"y":-220,
-			"width":220,
-			"height":60
-		},
-		{
 			"id":"b1fcf0020c94720e",
 			"type":"text",
 			"text":"Frameworks",
@@ -120,66 +90,6 @@
 			"x":-170,
 			"y":-20,
 			"width":150,
-			"height":60
-		},
-		{
-			"id":"9503a59e55f23be2",
-			"type":"text",
-			"text":"[Variáveis de Ambiente em Django](variaveis-de-ambiente.md)",
-			"styleAttributes":{},
-			"x":-1040,
-			"y":200,
-			"width":300,
-			"height":60
-		},
-		{
-			"id":"22c40c6570aeb08a",
-			"type":"text",
-			"text":"[Comandos](comandos.md)",
-			"styleAttributes":{},
-			"x":-960,
-			"y":120,
-			"width":140,
-			"height":60
-		},
-		{
-			"id":"07cce390b1bea3f1",
-			"type":"text",
-			"text":"[1. Requisições e Respostas](1-requisicoes-e-respostas.md)",
-			"styleAttributes":{},
-			"x":-1480,
-			"y":-180,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"f82d02b20e352d89",
-			"type":"text",
-			"text":"[0. Criação e Configuração](0-criacao-e-configuracao.md)",
-			"styleAttributes":{},
-			"x":-1480,
-			"y":-260,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"32daa896f246c0b6",
-			"type":"text",
-			"text":"[2. Modelos e o site Admin](2-modelos-e-site-admin.md)",
-			"styleAttributes":{},
-			"x":-1480,
-			"y":-100,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"2774cc012c60a3ad",
-			"type":"text",
-			"text":"[Instalação](0-instalacao.md)",
-			"styleAttributes":{},
-			"x":-1340,
-			"y":-460,
-			"width":120,
 			"height":60
 		},
 		{
@@ -233,6 +143,56 @@
 			"height":60
 		},
 		{
+			"id":"1a249a56a23be580",
+			"type":"text",
+			"text":"[Ambiente Virtual (VENV)](ambiente-virtual.md)",
+			"styleAttributes":{},
+			"x":380,
+			"y":440,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"bd30aa6436c68883",
+			"type":"text",
+			"text":"[Bibliotecas](linguagens/python/bibliotecas/README.md)",
+			"styleAttributes":{},
+			"x":520,
+			"y":-20,
+			"width":120,
+			"height":60
+		},
+		{
+			"id":"2236ff8636d4ad3f",
+			"type":"text",
+			"text":"[Guia Básico de Django](linguagens/python/frameworks/django/basico/README.md)",
+			"styleAttributes":{},
+			"x":-930,
+			"y":-220,
+			"width":220,
+			"height":60
+		},
+		{
+			"id":"9503a59e55f23be2",
+			"type":"text",
+			"text":"[Variáveis de Ambiente em Django](variaveis-de-ambiente.md)",
+			"styleAttributes":{},
+			"x":-1040,
+			"y":200,
+			"width":300,
+			"height":60
+		},
+		{
+			"id":"22c40c6570aeb08a",
+			"type":"text",
+			"text":"[Comandos](comandos.md)",
+			"styleAttributes":{},
+			"x":-960,
+			"y":120,
+			"width":140,
+			"height":60
+		},
+		{
 			"id":"3973bbf9f9a68e07",
 			"type":"text",
 			"text":"[Conda](conda.md)",
@@ -240,6 +200,66 @@
 			"x":40,
 			"y":660,
 			"width":100,
+			"height":60
+		},
+		{
+			"id":"32daa896f246c0b6",
+			"type":"text",
+			"text":"[2. Banco de Dados e Modelos](linguagens/python/frameworks/django/basico/2-db-e-modelos.md)",
+			"styleAttributes":{},
+			"x":-1520,
+			"y":-120,
+			"width":280,
+			"height":60
+		},
+		{
+			"id":"07cce390b1bea3f1",
+			"type":"text",
+			"text":"[1. Requisições e Respostas](1-requisicoes-e-respostas.md)",
+			"styleAttributes":{},
+			"x":-1520,
+			"y":-200,
+			"width":280,
+			"height":60
+		},
+		{
+			"id":"f82d02b20e352d89",
+			"type":"text",
+			"text":"[0. Criação e Configuração](0-criacao-e-configuracao.md)",
+			"styleAttributes":{},
+			"x":-1520,
+			"y":-280,
+			"width":280,
+			"height":60
+		},
+		{
+			"id":"c5762e3e2b2780ec",
+			"type":"text",
+			"text":"[3. Site Admin](linguagens/python/frameworks/django/basico/3-site-admin.md)",
+			"styleAttributes":{},
+			"x":-1520,
+			"y":-40,
+			"width":280,
+			"height":60
+		},
+		{
+			"id":"6e3a9d6b33e37ff9",
+			"type":"text",
+			"text":"[4. Views e Templates](linguagens/python/frameworks/django/basico/4-views-e-templates.md)",
+			"styleAttributes":{},
+			"x":-1520,
+			"y":40,
+			"width":280,
+			"height":60
+		},
+		{
+			"id":"2774cc012c60a3ad",
+			"type":"text",
+			"text":"[Instalação](0-instalacao.md)",
+			"styleAttributes":{},
+			"x":-1360,
+			"y":-460,
+			"width":120,
 			"height":60
 		}
 	],
