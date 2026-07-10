@@ -208,7 +208,7 @@ Note que uma vez que você tiver feito isto em todas as **views**, não vamos ma
 A função [`render()`](https://docs.djangoproject.com/pt-br/5.2/topics/http/shortcuts/#django.shortcuts.render "django.shortcuts.render") recebe o nome do **template** como primeiro argumento e um dicionário opcional como segundo argumento. Ele retorna um objeto [`HttpResponse`](https://docs.djangoproject.com/pt-br/5.2/ref/request-response/#django.http.HttpResponse "django.http.HttpResponse") do **template** informado renderizado com o contexto determinado.
 
 ---
-## Levantando um erro 404
+## Lançando um erro 404
 
 Agora vamos alterar a **view** de detalhe de pergunta(`question`) - a página que mostra as questões para uma enquete lançada. Aqui está a **view**:
 
