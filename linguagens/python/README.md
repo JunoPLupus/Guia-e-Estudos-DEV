@@ -31,3 +31,8 @@ atualizado: 2026-07-08
 ### Modelagem e validação
 
 1. [Pydantic](linguagens/python/bibliotecas/modelagem-e-validacao/pydantic/README.md)
+
+
+## Dicas
+
+- [Debug](dicas/debug.md)

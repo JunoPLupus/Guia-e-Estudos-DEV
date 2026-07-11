@@ -14,4 +14,13 @@ links:
 
 É um _framework full-stack_ baseado exclusivamente em [Python](../../README.md), mas por ser voltado ao desenvolvimento web, interage com linguagens padrão de frontend web como _HTML_, _CSS_ e _Javascript_.
 
+## Básico
+
 1. [Guia Básico de Django](basico/README.md)
+
+
+## Dicas
+
+- [Comandos](dicas/comandos.md)
+- [Migrações no Django](dicas/migracoes.md)
+- [Variáveis de Ambiente em Django](dicas/variaveis-de-ambiente.md)
