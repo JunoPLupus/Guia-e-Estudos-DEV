@@ -2,13 +2,13 @@
 title: Criação e Configuração
 tipo: guia
 linguagem: python
-versao_linguagem: "3.12+"
+versao_linguagem: 3.12+
 tags:
   - guia
   - django-5-2
 nivel: basico
 status: pronto
-atualizado: 2026-07-08
+atualizado: 2026-07-11T08:07:00
 ---
 %% col-start %%
 %% col-break:b:secondary %%
@@ -21,11 +21,11 @@ atualizado: 2026-07-08
 
 ## Criando um Projeto
 
-``` bash
+```bash
 mkdir django_tutorial # cria um diretório
 ```
 
-``` bash
+```bash
 django-admin startproject mysite django_tutorial
 ```
 
@@ -46,15 +46,15 @@ djangotutorial/
         wsgi.py
 ```
 
-- **manage.py**: um utilitário de linha de comando que permite a você interagir com esse projeto Django de várias maneiras. Você pode ler todos os detalhes sobre o `manage.py` em [django-admin and manage.py](https://docs.djangoproject.com/pt-br/5.2/ref/django-admin/).
+- **manage.py**: um utilitário de linha de comando que permite a você interagir com esse projeto _Django_ de várias maneiras. Você pode ler todos os detalhes sobre o `manage.py` em [django-admin and manage.py](https://docs.djangoproject.com/pt-br/5.2/ref/django-admin/).
     
-- **mysite/**: um diretório com o pacote python do seu projeto, é o nome do pacote que você vai precisar para importar qualquer coisa dentro dele (ex.: `mysite.urls`).
+- **mysite/**: um diretório com o pacote _Python_ do seu projeto, é o nome do pacote que você vai precisar para importar qualquer coisa dentro dele (ex.: `mysite.urls`).
     
-- **mysite/__init__.py**: um arquivo vazio que diz ao Python que este diretório deve ser considerado um pacote Python. Se você é um iniciante Python, leia [mais sobre pacotes](https://docs.python.org/3/tutorial/modules.html#tut-packages "(em Python v3.14)") na documentação oficial do Python.
+- **mysite/__init__.py**: um arquivo vazio que diz ao _Python_ que este diretório deve ser considerado um pacote _Python_. Se você é um iniciante _Python_, leia [mais sobre pacotes](https://docs.python.org/3/tutorial/modules.html#tut-packages "(em Python v3.14)") na documentação oficial do _Python_.
     
-- **mysite/settings.py**: configurações para este projeto Django. [Configurações do Django](https://docs.djangoproject.com/pt-br/5.2/topics/settings/) irá revelar para você tudo sobre o funcionamento do `settings`.
+- **mysite/settings.py**: configurações para este projeto _Django_. [Configurações do Django](https://docs.djangoproject.com/pt-br/5.2/topics/settings/) irá revelar para você tudo sobre o funcionamento do `settings`.
     
-- **mysite/urls.py**: as declarações de URLs para este projeto Django; um "índice" de seu site movido a Django. Você pode ler mais sobre URLs em [Despachante de URL](https://docs.djangoproject.com/pt-br/5.2/topics/http/urls/).
+- **mysite/urls.py**: as declarações de URLs para este projeto _Django_; um "índice" de seu site movido a _Django_. Você pode ler mais sobre URLs em [Despachante de URL](https://docs.djangoproject.com/pt-br/5.2/topics/http/urls/).
     
 - **mysite/asgi.py**: um ponto de integração para servidores web compatíveis com ASGI usado para servir seu projeto. Veja [Como fazer o deploy com ASGI](https://docs.djangoproject.com/pt-br/5.2/howto/deployment/asgi/) para mais detalhes.
     
@@ -63,7 +63,7 @@ djangotutorial/
 ---
 ## O servidor de desenvolvimento
 
-``` bash
+```bash
 cd django_tutorial # entra no diretório do projeto Django
 
 python manage.py runserver # roda o servidor
@@ -74,7 +74,7 @@ Se o servidor estiver funcionando, acesse http://127.0.0.1:8000/ e verá inicial
 ![Servidor Django iniciado](../../../../../_assets/2026-07-06_servidor-django-iniciado.png)
 
 > [!NOTE] Recarregamento automático do `runserver`
->  O runserver recarrega automaticamente a cada solicitação, conforme necessário. Não é necessário reiniciar o servidor para que as alterações de código tenham efeito. Porém, algumas ações como adição de arquivos não disparam uma reinicialização, nesses casos será necessário reiniciar manualmente.
+>  O `runserver` recarrega automaticamente a cada solicitação, conforme necessário. Não é necessário reiniciar o servidor para que as alterações de código tenham efeito. Porém, algumas ações como adição de arquivos não disparam uma reinicialização, nesses casos será necessário reiniciar manualmente.
 
 
 %% col-start %%

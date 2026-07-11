@@ -2,13 +2,13 @@
 title: Requisições e Respostas
 tipo: guia
 linguagem: python
-versao_linguagem: "3.12+"
+versao_linguagem: 3.12+
 tags:
   - guia
   - django-5-2
 nivel: basico
 status: pronto
-atualizado: 2026-07-08
+atualizado: 2026-07-10T00:00:00
 links:
   - https://docs.djangoproject.com/pt-br/5.2/intro/tutorial01/
 ---
@@ -30,27 +30,23 @@ Ao criar uma aplicação no projeto, o _Django_ gera automaticamente a estrutura
 
 As aplicações podem viver em qualquer lugar do _Python Path_. Neste tutorial, vamos criar nossa aplicação `polls` dentro da pasta `django_tutorial`.
 
-``` bash
+```bash
 $ python manage.py startapp polls
 ```
 
 ---
 ## Escrevendo a primeira view
 
-``` python
-# polls/views.py
-
+```python file:polls/views.py
 from django.http import HttpResponse  
   
-def index(request) -> HttpResponse:  
+def index(request):  
     return HttpResponse("Olá, mundo! Você está no index do 'polls'.")
 ```
 
-Para acessar no navegador, será necessário mapear a url. Essas configurações de url são definidas dentro de cada aplicação _Django_ do projeto e são arquivos nomeados `urls.py`.
+Para acessar no navegador, será necessário mapear a URL. Essas configurações de URL são definidas dentro de cada aplicação _Django_ do projeto e são arquivos nomeados `urls.py`.
 
-``` python
-# polls/urls.py
-
+```python file:polls/urls.py
 from django.urls import path
 
 from . import views
@@ -62,28 +58,26 @@ urlpatterns = [
 
 Próximo passo é configurar as rotas definidas em `polls.urls` dentro de `mysite`.
 
-``` python
-# mysite/urls.py
-
+```python file:mysite/urls.py hl:2,5
 from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('polls/', include('polls.urls')),
+    path('polls/', include('polls.urls')), # importa todas as rotas de 'polls' com pré-fixo 'polls/'
     path('admin/', admin.site.urls),
 ]
 ```
 
 
-O `path()` espera pelo menos 2 argumentos: **rota** e **view**. A ideia por trás do `include()` é facilitar plugar URLs, sempre que o _Django_ encontrar este método, ele importa todas as urls daquele arquivo com o pré-fixo definido, neste caso, `polls/`. Não é obrigatório o uso do _include_, mas é altamente recomendado para melhor modularização e organização das rotas do projeto.
+O `path()` espera pelo menos 2 argumentos: **rota** e **view**. A ideia por trás do `include()` é facilitar plugar URLs, sempre que o _Django_ encontrar este método, ele importa todas as URLs daquele arquivo com o pré-fixo definido, neste caso, `polls/`. Não é obrigatório o uso do _include_, mas é altamente recomendado para melhor modularização e organização das rotas do projeto.
 
 
 > [!NOTE] Quando usar `include()`
-> Você deve sempre usar `include()` quando quiser incluir outras urls. A única exceção é `admin.site.urls` que é uma URLconf pré-configurada pelo Django para ser o site admin padrão.
+> Você deve sempre usar `include()` quando quiser incluir outras URLs. A única exceção é `admin.site.urls` que é uma URLconf pré-configurada pelo _Django_ para ser o site admin padrão.
 
 Agora com as rotas devidamente configuradas, só rodar o servidor novamente e acessar http://localhost:8000/polls/.
 
-``` bash
+```bash
 $ python manage.py runserver
 ```
 

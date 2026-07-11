@@ -3,19 +3,20 @@ title: Bibliotecas Python
 tipo: indice
 tags:
   - indice
-status: pronto
-atualizado: 2026-07-08
+status: em desenvolvimento
+atualizado: 2026-07-10T08:48:00
 ---
 [< Python (Índice)](linguagens/python/README.md)
 # Bibliotecas Python
 
+
 ## Análise estática e formatação
 
-- [Ruff](ruff.md) — linting e formatação de código
+- [Ruff](ruff.md) - _linting_ e formatação de código
 
 ## Gerenciador de tarefas
 
-- [Taskipy](taskipy.md) — task runner via pyproject.toml
+- [Taskipy](taskipy.md) - _task runner_ via `pyproject.toml`
 
 ## Modelagem e validação de dados
 

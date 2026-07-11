@@ -20,14 +20,14 @@ Variáveis de ambiente são extremamente necessárias para proteger dados sensí
 
 Para instalar esse pacote, vou estar utilizando o [poetry](poetry.md), mas você pode usar o [gerenciadores de pacotes](linguagens/python/basico/gerenciadores-de-pacotes/README.md) que preferir.
 
-``` bash
+```bash
 # Compatível com Python 3.9+
 $ poetry add django-environ
 ```
 
 OU
 
-``` bash
+```bash
 # Compatível com Python 2.7 e 3.6+
 $ poetry add python-decouple
 
@@ -57,11 +57,13 @@ Abra o seu arquivo `settings.py` e adicione a inicialização do `django-environ
 import os
 import environ
 
-# Constrói o caminho base do projeto
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Inicializa o ambiente
 env = environ.Env()
+
+# Constrói o caminho base do projeto
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # Lê o arquivo .env (se existir)
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 

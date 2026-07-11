@@ -54,7 +54,7 @@ TIME_ZONE = 'America/Sao_Paulo' # Define o fuso horário oficial.
 
 #### DATABASES
 
-Por padrão a configuração do `DATABASES` usa o _SQLite_, ele é bem simples e ideal para quem está aprendendo sobre este framework. Mas em projetos reais é recomendado usar bancos de dados mais robustos como _PostgreSQL_.
+Por padrão a configuração do `DATABASES` usa o _SQLite_, ele é bem simples e ideal para quem está aprendendo sobre este _framework_. Mas em projetos reais é recomendado usar bancos de dados mais robustos como _PostgreSQL_.
 
 ```python file:mysite/settings.py ln:98
 DATABASES = {  
@@ -110,7 +110,7 @@ $ poetry add "psycopg[binary,pool]" --group dev # instala o pacote psycopg ^3.3.
 Por questões de segurança, conflitos de memória e otimização, não é recomendado usar esse pacote em ambiente de produção, por isso usei `--group dev` para isolar ele no ambiente de desenvolvimento, nesse caso o grupo de dependências `dev` no _poetry_.
 
 >[!INFO] Suporte do Django para `psycopg3`
-> Ele é totalmente suportado pelo Django 4.2 e versões mais atuais! Oferece melhor performance, suporte async nativo e API modernizada. 
+> Ele é totalmente suportado pelo `Django 4.2` e versões mais atuais! Oferece melhor performance, suporte async nativo e API modernizada. 
 > 
 > Lembre-se de configurar `ENGINE: 'django.db.backends.postgresql'` dentro do `DATABASES` no `settings.py`.
 
@@ -125,13 +125,13 @@ Por padrão, o `INSTALLED_APPS` contém as seguintes aplicações, que vêm com 
 
 - **django.contrib.auth** - Um sistema de autenticação, controla o sistema de usuários, senhas, grupos e permissões.
 
-- **django.contrib.contenttypes** - Um framework para tipos de conteúdo, permite que o _Django_ rastreie todos os modelos criados no seu projeto e crie relações genéricas entre eles.
+- **django.contrib.contenttypes** - Um _framework_ para tipos de conteúdo, permite que o _Django_ rastreie todos os modelos criados no seu projeto e crie relações genéricas entre eles.
 
-- **django.contrib.sessions** - Um framework de sessão, permite que o servidor guarde dados do usuário entre os cliques (como itens no carrinho).
+- **django.contrib.sessions** - Um _framework_ de sessão, permite que o servidor guarde dados do usuário entre os cliques (como itens no carrinho).
 
-- **django.contrib.messages** - Um framework de envio de mensagem, exibe notificações temporárias para o usuário (ex.: "Cadastro realizado com sucesso").
+- **django.contrib.messages** - Um _framework_ de envio de mensagem, exibe notificações temporárias para o usuário (ex.: "Cadastro realizado com sucesso").
 
-- **django.contrib.staticfiles** - Um framework para gerenciamento de arquivos, gerencia arquivos CSS, JavaScript e imagens.
+- **django.contrib.staticfiles** - Um _framework_ para gerenciamento de arquivos, gerencia arquivos CSS, JavaScript e imagens.
 
 
 > [!CAUTION] Cuidado ao modificar esta lista
@@ -139,15 +139,15 @@ A maioria dessas aplicações são opcionais, você pode removê-las caso realme
 
 Quando você roda o servidor, o _Django_ não varre as pastas do projeto inteiro procurando códigos, ele lê apenas o que está explicitamente declarado nesta lista. Então sempre que você criar aplicativos no seu projeto, adicione o nome dele na lista:
 
-```python file:mysite/settings.py ln:48
+```python file:mysite/settings.py ln:48 hl:49
 INSTALLED_APPS = [  
+	'polls.apps.PollsConfig',  # agora o Django está rastreando seu aplicativo 'polls'
     'django.contrib.admin',  
     'django.contrib.auth',  
     'django.contrib.contenttypes',
     'django.contrib.sessions',  
     'django.contrib.messages',
-    'django.contrib.staticfiles', 
-    'polls.apps.PollsConfig'  # agora o Django está rastreando seu aplicativo 'polls'
+    'django.contrib.staticfiles'
 ]
 ```
 
@@ -438,7 +438,7 @@ E vise-versa: os objetos `Question` têm acesso aos objetos `Choice` vinculados.
 # 3
 ```
 
-A API do _Django_ segue as relações entre entidades automaticamente. Use `__` para separar relacionamentos. Isso funciona em vários níveis, o quanto você precisar, não têm limite.
+A API do _Django_ segue as relações entre entidades automaticamente. Use `__` para separar relacionamentos. Isso funciona em vários níveis, o quanto você precisar, não têm um limite.
 
 Agora vamos encontrar todas as `Choice` de qualquer `Question` que foram publicadas esse ano (reutilizando a variável `current_year` que criamos anteriormente).
 

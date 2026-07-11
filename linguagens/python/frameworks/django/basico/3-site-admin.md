@@ -59,7 +59,7 @@ O site de administração vem ativado por padrão. Vamos iniciar o servidor de d
 
 > [!TIP] Executar o servidor
 > Se o servidor não estiver sendo executado, inicie-o com o seguinte comando:
-> ```python
+> ```bash
 > $ python manage.py runserver
 > ```
 > E caso esteja congelado na verificação de erros e não exibir no terminal a url, verifique se o seu banco de dados está rodando.
@@ -114,7 +114,7 @@ Clique na enquete `What's up?` para editá-la:
 > <br>
 > - Os diferentes tipos de campos ([`DateTimeField`](https://docs.djangoproject.com/pt-br/5.2/ref/models/fields/#django.db.models.DateTimeField "django.db.models.DateTimeField"), [`CharField`](https://docs.djangoproject.com/pt-br/5.2/ref/models/fields/#django.db.models.CharField "django.db.models.CharField")) correspondem aos respectivos componentes HTML de inserção. Cada tipo de campo sabe como se exibir no site de administração do _Django_.
 > <br>
-> - Cada [`DateTimeField`](https://docs.djangoproject.com/pt-br/5.2/ref/models/fields/#django.db.models.DateTimeField "django.db.models.DateTimeField") ganha um atalho JavaScript de graça. Datas possuem um atalho “Hoje” e um calendário popup, e horas têm um atalho “Agora” e um conveniente popup com listas de horas utilizadas comumente.
+> - Cada [`DateTimeField`](https://docs.djangoproject.com/pt-br/5.2/ref/models/fields/#django.db.models.DateTimeField "django.db.models.DateTimeField") ganha um atalho _JavaScript_ de graça. Datas possuem um atalho “Hoje” e um calendário popup, e horas têm um atalho “Agora” e um conveniente popup com listas de horas utilizadas comumente.
 > <br>
 > A parte inferior da página fornece uma série de opções:
 > <br>

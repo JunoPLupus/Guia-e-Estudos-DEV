@@ -16,9 +16,9 @@ links:
 
 `django-admin` é um comando [Django](linguagens/python/frameworks/django/README.md) usado para tarefas administrativas.
 
-`manage.py` é criado automaticamente em cada projeto Django. Este comando faz o mesmo que `django-admin`, mas também define a variável de ambiente `DJANGO_SETTINGS_MODULE` que aponta para o arquivo `settings.py` do seu projeto.
+`manage.py` é criado automaticamente em cada projeto _Django_. Este comando faz o mesmo que `django-admin`, mas também define a variável de ambiente `DJANGO_SETTINGS_MODULE` que aponta para o arquivo `settings.py` do seu projeto.
 
-Caso esteja trabalhando apenas com um projeto Django, é mais fácil usar `manage.py`. Mas caso esteja trabalhando com múltiplos projetos e precise trocar entre múltiplos arquivos `settings`, é recomendado usar `django-admin` com `DJANGO_SETTINGS_MODULE` ou com `--settings` na linha de comando.
+Caso esteja trabalhando apenas com um projeto _Django_, é mais fácil usar `manage.py`. Mas caso esteja trabalhando com múltiplos projetos e precise trocar entre múltiplos arquivos `settings`, é recomendado usar `django-admin` com `DJANGO_SETTINGS_MODULE` ou com `--settings` na linha de comando.
 
 ### Uso
 

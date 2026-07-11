@@ -6,7 +6,7 @@ linguagem: python
 tags:
   - automacao
 status: pronto
-atualizado: 2026-07-08
+atualizado: 2026-07-10T08:48:00
 links:
   - https://pypi.org/project/taskipy/1.0.0/
 ---
@@ -17,7 +17,7 @@ links:
 
 Exemplo de configuração no `pyproject.toml`:
 
-``` python
+```toml
 [tool.taskipy.tasks]  
 pre_lint = 'typos'  
 lint = 'ruff check'  
