@@ -5,7 +5,7 @@ tags:
   - indice
   - django-5-2
 status: pronto
-atualizado: 2026-07-08
+atualizado: 2026-07-11 17:02
 links:
   - https://docs.djangoproject.com/pt-br/5.2/intro/
 ---
@@ -23,7 +23,7 @@ links:
 	2. [Banco de dados e Modelos](2-db-e-modelos.md)
 	3. [Site Admin](3-site-admin.md)
 	4. [Views e Templates](4-views-e-templates.md)
-	5. Forms e views genéricas
+	5. [Forms e Views Genéricas](5-forms-e-views-genericas.md)
 	6. Testes
 	7. Arquivos estáticos
 	8. Personalizando o site admin
