@@ -8,33 +8,34 @@ versao_linguagem: 3.12+
 tags:
   - guia
 nivel: basico
-status: em desenvolvimento
-atualizado: 2026-07-10T00:00:00
+status: pronto
 links:
   - https://docs.djangoproject.com/pt-br/5.2/intro/tutorial03/
+atualizado: 2026-07-11 17:04
+criado: 2026-07-10T21:37:00
 ---
 %% col-start %%
 %% col-break:b:secondary %%
 [< Parte 3 - Site Admin](3-site-admin.md)
 %% col-break:b:secondary %%
-[Parte 5 - Forms e Views genéricas >]
+[Parte 5 - Forms e Views genéricas >](5-forms-e-views-genericas.md)
 %% col-end %%
 # Views e Templates
 
 
 Uma **View** em uma aplicação _Django_ geralmente têm uma função específica e um **template** específico. 
 
->[!TIP] Por padrão as **views** no _Django_ lidam diretamente com requisições do tipo _GET_, isso é algo que você pode alterar em cada **view**, mas não é o foco deste tutorial.
+>[!TIP] Por padrão as **views** no _Django_ lidam diretamente com requisições do tipo _GET_, isso é algo que você pode alterar em cada **view**, vamos explorar um pouco sobre o método _POST_ na próxima parte, mas não é o foco deste tutorial.
 
-Em nossa aplicação de enquetes, nós teremos as seguintes **views**:
+Em nossa aplicação de enquetes (`polls`), nós teremos as seguintes **views**:
 
-- **Página de "índice" de enquetes** - exibe as enquetes (`question`) mais recentes.
+- **Página de "índice" de enquetes** - exibe as perguntas (`Question`) das enquetes mais recentes.
 
-- **Página de "detalhes" da enquete** - exibe a pergunta (`question_text`) da enquete(`question`), sem os resultados, mas com um formulário para votar.
+- **Página de "detalhes" da enquete** - exibe a pergunta (`question_text`) de uma enquete específica, sem os resultados, mas com um formulário para votar.
 
-- **Página de “resultados” de perguntas** - exibe os resultados de uma pergunta(`Question`) em particular.
+- **Página de “resultados” de perguntas** - exibe os resultados da pergunta (`Question`) de uma enquete específica.
 
-- **Ação de voto** - gerencia a votação para uma escolha (`choice`) específica em uma enquete(`question`) específica.
+- **Ação de voto** - gerencia a votação para uma escolha (`Choice`) sobre a pergunta (`Question`) de uma enquete específica.
 
 Em _Django_, páginas web e outros conteúdos são entregues por **views**. Cada **view** é representada por uma função _Python_ (ou método, no caso de **views** baseadas em classes). O _Django_ vai escolher uma **view** através da _URL_ da requisição (especificamente a parte da _URL_ após o nome do domínio, ex.: `/pools/`).
 
@@ -80,11 +81,11 @@ urlpatterns = [
 ]
 ```
 
-Faça alguns testes no seu navegador. Tente usar a url [`/polls/34`](http://127.0.0.1:8000/polls/34/), vai executar a função `detail()` e exibir qualquer ID que você tenha passado na URL. 
+Faça alguns testes no seu navegador. Tente usar a URL [`/polls/34`](http://127.0.0.1:8000/polls/34/), vai executar a função `detail()` e exibir qualquer ID que você tenha passado na URL. 
 
 ![Print da tela de detalhes de uma enquete](../../../../../_assets/2026-07-10_tela-detalhes-polls-inicial.png)
 
-Agora tente a url [`/polls/34/results/`](http://127.0.0.1:8000/polls/34/results/) e a [`/polls/34/vote/`](http://127.0.0.1:8000/polls/34/vote/) também - elas irão exibir as páginas de resultados (`results()`) e de votação (`vote()`).
+Agora tente a URL [`/polls/34/results/`](http://127.0.0.1:8000/polls/34/results/) e a [`/polls/34/vote/`](http://127.0.0.1:8000/polls/34/vote/) também - elas irão exibir as páginas de resultados (`results()`) e de votação (`vote()`).
 
 > [!INFO] Requisições em Django
 > Quando alguém requisita uma página do seu site web, por exemplo `/polls/34/`, o _Django_ vai carregar o módulo _Python_ `mysite.urls` que é pra onde a [`ROOT_URLCONF`](https://docs.djangoproject.com/pt-br/5.2/ref/settings/#std-setting-ROOT_URLCONF) dentro de `settings.py` está apontando.
@@ -283,17 +284,77 @@ O sistema de **templates** usa uma sintaxe separada por pontos para acessar os a
 
 A chamada do método acontece no laço [`{% for %}`](https://docs.djangoproject.com/pt-br/5.2/ref/templates/builtins/#std-templatetag-for): `poll.choice_set.all` é interpretado como código _Python_ `poll.choice_set.all()`, que retorna objetos `Choice` iteráveis que são suportado para ser usado na tag `{% for %}`.
 
-Veja o [guia de templates](https://docs.djangoproject.com/pt-br/5.2/topics/templates/) para maiores detalhes sobre templates.
+Veja o [guia de templates](https://docs.djangoproject.com/pt-br/5.2/topics/templates/) para maiores detalhes sobre **templates**.
 
 ---
-## Removendo URLs codificadas nos templates
+## Removendo URLs cruas nos templates
 
 
+Lembre-se, quando escrevemos o link para uma pergunta no **template** `polls/templates/index.html`, o link foi parcialmente codificado assim:
+
+```html file:polls/templates/polls/index.html ln:4
+<li>
+	<a href="/polls/{{ question.id }}/">{{ question.question_text }}</a>
+</li>
+```
+
+O problema com esse `/polls/...` _hardcoded_ (valor cru), por ser uma abordagem muito acoplada,  dificulta muito caso você queira alterar as URLs com vários *templates*. Mas lembre-se que definimos o argumento `name` nas funções `path` do módulo `polls.urls`:
+
+```python file:polls/urls.py ln:9
+path('<int:question_id>/', views.detail, name='detail'),
+```
+
+Então podemos substituir esse valor cru da URL usando a _tag_ de **template** `{% url %}`:
+
+```html file:polls/templates/polls/index.html ln:4
+<li>
+	<a href="{% url 'detail' question.id %}">{{ question.question_text }}</a>
+</li>
+```
+
+Com isso, quando o usuário clicar neste link, ele vai ser direcionado para a URL do _path_ "_detail_" (`/polls/{question_id}`) já passando o `id` da `question` como parâmetro, independente da URL atual do _path_. Agora se você quiser alterar a URL das **views**, você pode fazer isso sem que precise atualizar as URLs manualmente em todos os **templates** que usavam ela.
+
+---
+## Namespacing nome de URL
+
+Neste tutorial temos apenas uma aplicação, `polls`. Mas em projetos _Django_ reais, pode haver 5, 10, 20 ou mais aplicações dentro de um mesmo projeto. Para que o _Django_ consiga diferenciar as **views** de aplicações diferentes, usamos _namespaces_ no _URLconf_. Vá no arquivo `polls/urls.py` e adicione um `app_name` para configurar o _namespace_ da aplicação:
+
+```python file:polls/urls.py hl:5
+from django.urls import path
+
+from . import views
+
+app_name = 'polls'
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('<int:question_id>/', views.detail, name='detail'),
+    path('<int:question_id>/results/', views.results, name='results'),
+    path('<int:question_id>/vote/', views.vote, name='vote'),
+]
+```
+
+Agora altere seu template `polls/index.html` que atualmente está assim:
+
+```html file:polls/templates/polls/index.html ln:4
+<li>
+	<a href="{% url 'detail' question.id %}">{{ question.question_text }}</a>
+</li>
+```
+
+Para pontar para a view de detalhes da aplicação `polls` usando o _namespace_ definido:
+
+```html file:polls/templates/polls/index.html ln:4
+<li>
+	<a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
+</li>
+```
+
+Na próxima parte do tutorial vamos falar sobre o básico sobre processamento de formulários e **views** genéricas.
 
 
 %% col-start %%
 %% col-break:b:secondary %%
 [< Parte 3 - Site Admin](3-site-admin.md)
 %% col-break:b:secondary %%
-[Parte 5 - Forms e Views genéricas >]
+[Parte 5 - Forms e Views genéricas >](5-forms-e-views-genericas.md)
 %% col-end %%
