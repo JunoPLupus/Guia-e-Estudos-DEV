@@ -9,8 +9,9 @@ versao_ferramenta:      # ex: "0.6"  (versão da própria lib/ferramenta)
 versao_linguagem:       # ex: "3.12+" (versão de linguagem que exige, se aplicável)
 tags:
   - ferramenta
-status: rascunho        # rascunho | revisar | pronto
-atualizado: <% tp.date.now("YYYY-MM-DD") %>
+status: rascunho        # rascunho | em desenvolvimento | pronto
+atualizado: <% tp.file.last_modified_date("YYYY-MM-DD HH:mm") %>
+criado: <% tp.file.creation_date("YYYY-MM-DD HH:mm") %>
 ---
 # <% tp.file.title %>
 

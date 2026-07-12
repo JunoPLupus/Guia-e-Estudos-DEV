@@ -10,8 +10,9 @@ versao_linguagem:        # ex: "3.10+" — versão mínima de Python que exige
 substitui:               # ex: [pip, pipx] — o que ele pode substituir, se aplicável
 tags:
   - gerenciador-pacotes
-status: rascunho
-atualizado: <% tp.date.now("YYYY-MM-DD") %>
+status: rascunho         # rascunho | em desenvolvimento | pronto
+atualizado: <% tp.file.last_modified_date("YYYY-MM-DD HH:mm") %>
+criado: <% tp.file.creation_date("YYYY-MM-DD HH:mm") %>
 links:
   - 
 ---

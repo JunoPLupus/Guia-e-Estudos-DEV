@@ -5,8 +5,9 @@ tags:
   - branches
 nivel: basico
 status: pronto
-atualizado: 2026-07-08
+atualizado: 2026-07-11 18:52
 ---
+[< Guia Básico de Git (Índice)](./README.md)
 # Branches
 
 

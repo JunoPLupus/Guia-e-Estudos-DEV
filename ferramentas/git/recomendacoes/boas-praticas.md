@@ -5,8 +5,9 @@ tags:
   - recomendacoes
   - commits
 status: pronto
-atualizado: 2026-07-08
+atualizado: 2026-07-11 20:48
 ---
+[< Recomendações de Git (Índice)](./README.md)
 # Boas Práticas
 
 - Manter a primeira linha curta (50 caracteres ou menos);

@@ -5,10 +5,11 @@ tags:
   - recomendacoes
   - commits
 status: pronto
-atualizado: 2026-07-08
+atualizado: 2026-07-11 20:47
 links:
   - https://www.conventionalcommits.org/en/v1.0.0/
 ---
+[< Recomendações de Git (Índice)](./README.md)
 # Convenções de mensagens de _commits_
 
 

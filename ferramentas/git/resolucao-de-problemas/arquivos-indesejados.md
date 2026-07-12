@@ -5,8 +5,9 @@ contexto: git
 tags:
   - problema
 status: pronto
-atualizado: 2026-07-08
+atualizado: 2026-07-11 20:48
 ---
+[< Resolução de Problemas (Índice)](./README.md)
 # Arquivos indesejados
 
 ## Arquivos indesejados no repositório

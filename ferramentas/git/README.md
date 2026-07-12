@@ -4,7 +4,7 @@ tipo: indice
 tags:
   - indice
 status: pronto
-atualizado: 2026-07-08
+atualizado: 2026-07-11 20:47
 ---
 # Git
 

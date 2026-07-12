@@ -8,8 +8,9 @@ versao_linguagem:       # ex: "3.12+"
 tags:
   - guia
 nivel: basico           # basico | intermediario | avancado
-status: rascunho
-atualizado: <% tp.date.now("YYYY-MM-DD") %>
+status: rascunho        # rascunho | em desenvolvimento | pronto
+atualizado: <% tp.file.last_modified_date("YYYY-MM-DD HH:mm") %>
+criado: <% tp.file.creation_date("YYYY-MM-DD HH:mm") %>
 ---
 # <% tp.file.title %>
 

@@ -1,13 +1,14 @@
 ---
 title: <% tp.file.title %>
 aliases:
-  - "<% tp.file.title %>"
+  - <% tp.file.title %>
 tipo: conceito
-categoria:              # ex: principio | padrao-projeto | arquitetura
+categoria:
 tags:
   - conceito
 status: rascunho
-atualizado: <% tp.date.now("YYYY-MM-DD") %>
+atualizado: <% tp.file.last_modified_date("YYYY-MM-DD HH:mm") %>
+criado: <% tp.file.creation_date("YYYY-MM-DD HH:mm") %>
 ---
 # <% tp.file.title %>
 
