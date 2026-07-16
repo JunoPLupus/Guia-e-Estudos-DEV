@@ -10,7 +10,7 @@ versao_linguagem: 3.5+
 tags:
   - ferramenta
 status: pronto
-atualizado: 2026/07/16 17:32
+atualizado: 2026/07/16 18:44
 criado: 2026-07-15 14:34
 links:
   - https://docs.python.org/pt-br/3.12/library/typing.html#typing.TypeVar
@@ -229,7 +229,7 @@ _Z = TypeVar('_Z', default=str) # modo antigo
 >T = TypeVar('T')
 >def funcao[U](x: T, y: U): ... # mistura proibida: antiga (T) e nova (U) na MESMA função
 >```
->Você pode usar tanto a sintaxe antiga quanto a nova, contanto que elas não sejam misturadas na MESMA função ou classe
+>Você pode usar tanto a sintaxe antiga quanto a nova, contanto que elas não sejam misturadas na MESMA função ou classe.
 
 ## Notas sobre versões
 
@@ -247,4 +247,4 @@ class Abrigo[V: Felino]: ...
 def ler_animal(Abrigo[Gato](Gato())): ...
 ```
 
-Portanto você pode usar uma sintaxe ou outra no decorrer do seu projeto conforme sua necessidade, apenas evite misturá-las dentro de uma mesma classe, função ou método.
+Portanto você pode usar uma sintaxe ou outra no decorrer do seu projeto conforme sua necessidade, apenas **evite misturar as formas de declaração dentro de uma mesma classe, função ou método**.
