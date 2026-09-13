@@ -10,7 +10,7 @@ versao_linguagem: 3.5+
 tags:
   - ferramenta
 status: pronto
-atualizado: 2026/07/16 18:44
+atualizado: 2026/07/20 13:25
 criado: 2026-07-15 14:34
 links:
   - https://docs.python.org/pt-br/3.12/library/typing.html#typing.TypeVar
@@ -45,8 +45,6 @@ class StrSequence[S: str]:  # S é a TypeVar com como limite superior em `str`;
 class StrOrBytesSequence[A: (str, bytes)]:  # A é uma TypeVar restrita a str ou bytes
     ...
 ```
-
-> ENTENDER MELHOR E MELHORAR ESSA EXPLICAÇÃO AQUI
 
 O modo antigo (que ainda pode ser usado) era definido com o seguinte:
 
@@ -230,6 +228,14 @@ _Z = TypeVar('_Z', default=str) # modo antigo
 >def funcao[U](x: T, y: U): ... # mistura proibida: antiga (T) e nova (U) na MESMA função
 >```
 >Você pode usar tanto a sintaxe antiga quanto a nova, contanto que elas não sejam misturadas na MESMA função ou classe.
+
+>[!TIP] Bound X Variância
+>Não confunda os dois, o _bound_ define um teto (`object` por padrão se não definido explicitamente), então quando você cria uma classe que possui um _bound_ definido (ex.: `Felino`), se você criar uma classe que estende dela, a TypeVar pode ser APENAS `Felino` ou subtipos deles, nunca supertipos como `Animal` e `object`.
+>
+> Já a variância ([covariante](#3.%20TypeVar%20covariante%20(Covariant%20type%20variable)) e [contravariante](#4.%20TypeVar%20Contravariante%20(Contravariant%20type%20variable))) controla mais quando você cria funções genéricas passando essa classe com TypeVar, mais precisamente quando você 
+
+>[!TIP] É apenas um contrato estático
+>O seu código não vai exatamente quebrar se você burlar as regras, o _type checker_ **só vai verificar a apontar erros/avisos na análise estática no seu código, não na execução da aplicação**. Isso mantêm a flexibilidade do _Python_, mas ajuda a equipe de desenvolvimento/CI a seguir um padrão e contratos rígidos quando necessário, mesmo em uma linguagem altamente flexível.
 
 ## Notas sobre versões
 
